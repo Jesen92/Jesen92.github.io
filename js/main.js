@@ -80,6 +80,7 @@
 		dots : true,
 		nav: false,
 		autoplay : true,
+		autoplayTimeout: 2000,
 		responsive:{
 			0: {
 				items:1
