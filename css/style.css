@@ -1814,7 +1814,7 @@ video {
 }
 
 .lg-padding-top {
-    padding-top: 90px;
+    padding-top: 120px;
 }
 
 .about-us-logo img {
@@ -1863,7 +1863,7 @@ button[disabled], html input[disabled] {
 }
 
 .img-projects {
-    width: 100%;
+    width: auto;
     height: 350px!important;
 }
 
