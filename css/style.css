@@ -1871,3 +1871,7 @@ button[disabled], html input[disabled] {
     cursor: pointer;
     opacity: 0.8;
 }
+
+.carousel-overlay {
+    background: #bfbfbf!important;
+}
