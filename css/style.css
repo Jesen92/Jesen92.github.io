@@ -1864,7 +1864,7 @@ button[disabled], html input[disabled] {
 
 .img-projects {
     width: auto;
-    height: 350px!important;
+    max-height: 350px!important;
 }
 
 .project-link.work-link a:hover {
@@ -1879,12 +1879,20 @@ button[disabled], html input[disabled] {
 .owl-carousel .owl-stage {
     display: flex;
     align-items: center;
-  }
+}
 
-  .owl-carousel .caption {
+.owl-carousel .caption {
     text-align: center;
-  }
+}
 
-  .owl-item {
+.owl-item {
     text-align: -webkit-center;
-  }
+}
+
+.container.project .row > .col-md-6 {
+    padding-right: 70px;
+}
+
+.container.project .row .col-md-6 > .owl-carousel {
+    padding-top: 60px;
+}
