@@ -1581,6 +1581,26 @@ header {
   .blog-comments .media .media {
       margin:0px -15px;
   }
+
+  .container.project .row > .col-md-6 {
+    padding-right: 15px!important;
+  }
+
+  .container.project .row .col-md-6 > .owl-carousel {
+    padding-top: 10px!important;
+  }
+
+  .section-header {
+    margin-bottom: 20px;
+  }
+
+  .projects-nav>li>a  {
+    color: #FFF!important;
+  }
+
+  #mtv {
+    padding-top: 35px;
+  }
 }
 
 
@@ -1851,7 +1871,7 @@ button[disabled], html input[disabled] {
 }
 
 .projects-nav>li>a  {
-    color: #10161A!important;
+    color: #10161A;
 }
 
 .projects-nav>li.active>a {
