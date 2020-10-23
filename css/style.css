@@ -1927,7 +1927,8 @@ button[disabled], html input[disabled] {
 }
 
 .owl-item {
-    text-align: -webkit-center;
+  display: flex;
+  justify-content: center;
 }
 
 .container.project .row > .col-md-6 {
