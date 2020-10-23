@@ -1544,6 +1544,10 @@ header {
 }
 
 @media only screen and (max-width: 480px) {
+  #projects-home .navbar > .container {
+    width: 100vw;
+  }
+
   .container.project {
     width: 95vw;
   }
