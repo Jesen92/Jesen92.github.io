@@ -1936,5 +1936,9 @@ button[disabled], html input[disabled] {
 }
 
 .container.project .row .col-md-6 > .owl-carousel {
-    padding-top: 60px;
+    padding-top: 40px;
+}
+
+.owl-next {
+  margin-right: 3px!important;
 }
