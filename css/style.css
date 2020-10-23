@@ -589,6 +589,13 @@ header {
     height: 100vh;
 }
 
+#projects-show {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-bottom: 130px;
+}
+
 #home .home-wrapper {
     position: absolute;
     left: 0px;
@@ -601,10 +608,10 @@ header {
 }
 
 .home-content h1 {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 .home-content button {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 .header-wrapper h2 {
@@ -1537,6 +1544,17 @@ header {
 }
 
 @media only screen and (max-width: 480px) {
+  .container.project {
+    width: 95vw;
+  }
+
+  #projects-show {
+    height: 100%;
+    min-height: 100vh;
+    position: relative;
+    top: 40px;
+  }
+
   #portfolio [class*='col-xs'] {
 		  width:100%;
 	}
@@ -1698,13 +1716,7 @@ header {
 #back-to-top:after {
     content: "\f106";
     font-family: 'FontAwesome';
-}
-
-#back-to-top:hover {
-    opacity: 0.8;
-}
-
-/*------------------------------------*\
+}100
 	Preloader
 \*------------------------------------*/
 
