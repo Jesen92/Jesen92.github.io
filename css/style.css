@@ -1552,6 +1552,10 @@ header {
     width: 95vw;
   }
 
+  #projects-show .col-md-12 {
+    padding-right: 0;
+  }
+
   #projects-show {
     height: 100%;
     min-height: 100vh;
