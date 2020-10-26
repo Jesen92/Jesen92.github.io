@@ -1478,6 +1478,7 @@ header {
 
 .footer-logo>a>img {
     max-height: 80px;
+    padding-right: 9px;
 }
 
 .footer-follow {
@@ -1724,7 +1725,7 @@ header {
 #back-to-top:after {
     content: "\f106";
     font-family: 'FontAwesome';
-}100
+}
 	Preloader
 \*------------------------------------*/
 
