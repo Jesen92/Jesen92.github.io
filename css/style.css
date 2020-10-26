@@ -1942,3 +1942,8 @@ button[disabled], html input[disabled] {
 .owl-next {
   margin-right: 3px!important;
 }
+
+.info-footer {
+  text-align: center;
+  margin-bottom: 20px;
+}

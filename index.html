@@ -483,7 +483,7 @@
 					<div class="contact">
 						<i class="fa fa-phone"></i>
 						<h3>Phone</h3>
-						<p>512-421-3940</p>
+						<p>+385 95 810 5514</p>
 					</div>
 				</div>
 				<!-- /contact -->
@@ -493,7 +493,7 @@
 					<div class="contact">
 						<i class="fa fa-envelope"></i>
 						<h3>Email</h3>
-						<p>email@support.com</p>
+						<p>contact@rimorplus.com</p>
 					</div>
 				</div>
 				<!-- /contact -->
@@ -503,7 +503,7 @@
 					<div class="contact">
 						<i class="fa fa-map-marker"></i>
 						<h3>Address</h3>
-						<p>1739 Bubby Drive</p>
+						<p>Livade 3, 52427 Livade</p>
 					</div>
 				</div>
 				<!-- /contact -->
@@ -511,12 +511,12 @@
 				<!-- contact form -->
 				<div class="col-md-8 col-md-offset-2">
 					<form class="contact-form" id="contact-form">
-						<input type="text" class="input" placeholder="Name">
-						<input type="email" class="input" placeholder="Email">
-						<input type="text" class="input" placeholder="Subject">
-						<textarea class="input" placeholder="Message"></textarea>
+						<input name="name" type="text" class="input" placeholder="Name">
+						<input name="email" type="email" class="input" placeholder="Email">
+						<input name="subject" type="text" class="input" placeholder="Subject">
+						<textarea name="message" class="input" placeholder="Message"></textarea>
 						<div class="recaptcha-center">
-							<div class="g-recaptcha" data-sitekey="6Lf2J_YUAAAAAHfPJSQoVTcfIT7bWQa4hBZnJ15b" data-callback="correctCaptcha"></div>
+							<div class="g-recaptcha" data-sitekey="6Ld0gNsZAAAAALrLEk8Ghq6xhtudVZBUmZhme0MO" data-callback="correctCaptcha"></div>
 						</div>
 						<button type="submit" class="main-btn" data-i18n="contact-send">Send message</button>
 					</form>
@@ -552,14 +552,12 @@
 
 					<!-- footer follow -->
 					<ul class="footer-follow">
-						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="#"><i class="fa fa-youtube"></i></a></li>
 					</ul>
 					<!-- /footer follow -->
+					<div class="info-footer">
+						<small>RIMOR PLUS Direktor: Marjan Marković, OIB: 72150419795, Žiro račun: HR90 2340 0091 1105 4491 6, Trgovački sud u Pazinu, MBS: 040290627, Privredna Banka Zagreb, IBAN: HR90 2340 0091 1105 4491 6, Temeljni kapital: 20.000,00 kn uplaćen u cijelost</small>
+					</div>
 
 					<!-- footer copyright -->
 					<div class="footer-copyright">
@@ -639,7 +637,9 @@
         var data = {};
         $.each($('#contact-form').serializeArray(), function(i, field) {
             data[field.name] = field.value;
-        });
+				});
+
+				console.log(data);
 
         sendContact(data);
     });
@@ -651,6 +651,7 @@
             type: "POST",
             success:function(response){
 
+								console.log(response);
                 response = JSON.parse(response);
 
                 if (response["type"] === "success") {
