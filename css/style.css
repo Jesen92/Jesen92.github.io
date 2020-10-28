@@ -1545,6 +1545,12 @@ header {
 }
 
 @media only screen and (max-width: 480px) {
+  .small-mobile-img {
+      padding-top: 50px;
+      padding-left: 50px;
+      padding-right:50px;
+  }
+
   #projects-home .navbar > .container {
     width: 100vw;
   }
